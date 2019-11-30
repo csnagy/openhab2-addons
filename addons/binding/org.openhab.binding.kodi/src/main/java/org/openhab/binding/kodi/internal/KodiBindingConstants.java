@@ -73,6 +73,8 @@ public class KodiBindingConstants {
     public static final String CHANNEL_CURRENTTIMEPERCENTAGE = "currenttimepercentage";
     public static final String CHANNEL_DURATION = "duration";
 
+    public static final String CHANNEL_CEC_COMMAND = "cec-command";
+
     // Module Properties
     public static final String PROPERTY_VERSION = "version";
 

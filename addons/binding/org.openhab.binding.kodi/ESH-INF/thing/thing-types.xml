@@ -361,6 +361,18 @@
 			</options>
 		</state>
 	</channel-type>
+	<channel-type id="ceccommand" advanced="true">
+		<item-type>String</item-type>
+		<label>Execute CEC Command</label>
+		<description>Sends a predefined action to Kodi to control a CEC Device</description>
+		<!-- <state> -->
+			<options>
+				<option value="activate">activate</option>
+				<option value="toggle">toggle</option>
+				<option value="standby">standby</option>
+				<option value="stop-and-standby">stop-and-standby</option>
+			</options>
+	</channel-type>
 
 	<!-- Kodi variables -->
 	<channel-type id="pvr-channel" advanced="true">

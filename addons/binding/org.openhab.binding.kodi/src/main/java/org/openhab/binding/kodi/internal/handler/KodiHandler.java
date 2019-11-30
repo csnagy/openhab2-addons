@@ -271,6 +271,14 @@ public class KodiHandler extends BaseThingHandler implements KodiEventListener {
                     connection.updatePlayerStatus();
                 }
                 break;
+            case CHANNEL_CEC_COMMAND:
+                if (command instanceof StringType) {
+                    connection.cecCommand(command.toString());
+                    updateState(CHANNEL_CEC_COMMAND, UnDefType.UNDEF);
+                } else if (RefreshType.REFRESH == command) {
+                    updateState(CHANNEL_CEC_COMMAND, UnDefType.UNDEF);
+                }
+                break;
             default:
                 logger.debug("Received unknown channel {}", channelUID.getIdWithoutGroup());
                 break;

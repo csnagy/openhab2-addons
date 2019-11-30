@@ -1044,4 +1044,14 @@ public class KodiConnection implements KodiClientSocketEventListener {
         String method = "System." + command;
         socket.callMethod(method);
     }
+
+    public void cecCommand(String command) {
+      JsonObject params = new JsonObject();
+      JsonObject params2 = new JsonObject();
+      params2.addProperty("command", command);
+      params.addProperty("addonid", "script.json-cec");
+      params.add("params", params2);
+      socket.callMethod("Addons.ExecuteAddon", params);
+    }
+
 }
