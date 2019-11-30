@@ -6,8 +6,8 @@
 
 	<!-- Kodi Thing Type -->
 	<thing-type id="kodi">
-		<label>Kodi Mediacenter</label>
-		<description>Kodi Mediacenter Binding</description>
+		<label>Kodi CEC Mediacenter</label>
+		<description>Kodi CEC Mediacenter Binding</description>
 
 		<channels>
 			<channel id="volume" typeId="volume" />
@@ -365,13 +365,14 @@
 		<item-type>String</item-type>
 		<label>Execute CEC Command</label>
 		<description>Sends a predefined action to Kodi to control a CEC Device</description>
-		<!-- <state> -->
+		<state>
 			<options>
 				<option value="activate">activate</option>
 				<option value="toggle">toggle</option>
 				<option value="standby">standby</option>
 				<option value="stop-and-standby">stop-and-standby</option>
 			</options>
+		</state>
 	</channel-type>
 
 	<!-- Kodi variables -->

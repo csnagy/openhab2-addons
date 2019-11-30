@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
-Automatic-Module-Name: org.openhab.binding.kodi
+Automatic-Module-Name: org.openhab.binding.kodi-cec
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
 Bundle-ManifestVersion: 2
-Bundle-Name: Kodi Binding
+Bundle-Name: Kodi CEC Binding
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Bundle-SymbolicName: org.openhab.binding.kodi;singleton:=true
+Bundle-SymbolicName: org.openhab.binding.kodi-cec;singleton:=true
 Bundle-Vendor: openHAB
 Bundle-Version: 2.4.0
 Import-Package: 
